@@ -1,0 +1,58 @@
+.app-sidebar{
+     width:30%;
+     height:100vh ;
+     border-right: 1px solid #ddd;
+}
+.app-sidebar-header{
+     display :flex;
+     justify-content:space-between;
+     padding:25px;
+}
+
+button{
+     background-color:none;
+     border:none;
+     color:#08c;
+     margin:0;
+     padding:0;
+     font-size:16px;
+     cursor:pointer;
+}
+.app-sidebar-header h1{
+     margin: 0;
+}
+.app-sidebar-notes{
+     height: calc(100vh - 78px);
+     overflow-y: scroll;
+}
+.app-sidebar-notes strong, .app-sidebar-note p, .app-sidebar-note small{
+     color: #999;
+}
+.app-sidebar-notes:hover strong, .app-sidebar-note:hover p, .app-sidebar-note:hover small{
+     color: #333;
+}
+.app-sidebar-note{
+     padding: 25px;
+     cursor: pointer;
+     transition: all 0.3s;
+}
+.sidebar-note-title{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.app-sidebar-note p{
+     margin: 10px 0;
+}
+.app-sidebar-note small {
+     color: #999;
+}
+.app-sidebar-note:hover{
+     background-color: #f1f0f0;
+}
+.app-sidebar-note.active{
+     background-color: #08c;
+}
+.app-sidebar-note.active strong, .app-sidebar-note.active p,.app-sidebar-note.active small, .app-sidebar-note.active button{
+     color: #fff;
+}
