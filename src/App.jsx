@@ -41,9 +41,9 @@ function App() {
      useEffect(() => {
           localStorage.setItem("notes", JSON.stringify(notes))
      }, [notes])
-     useEffect(() => {
-          setActiveNote(notes[0].id)
-     }, [notes])
+     // useEffect(() => {
+     //      setActiveNote(notes[0].id)
+     // }, [notes])
   
 
   return (
